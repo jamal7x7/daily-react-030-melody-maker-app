@@ -34,12 +34,10 @@ class MelodyMakerApp extends Component {
    
   }
 
- 
 
   render () {
     return (
-      <div 
-      className='App-container'>
+      <div className='App-container'>
 
         <ControleBar />
         <Items />

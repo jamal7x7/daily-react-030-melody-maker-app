@@ -44,22 +44,31 @@ body
 
 .App-container
   width: 800px
-  height: 450px
+  height: 600px
   margin: 0 auto
-  border: 1px solid rgba(#fff, 0.08)
-  background-color: $bgd
+  //border: 1px solid rgba(#fff, 0.08)
+  background-color: $bgm
   ::selection
       // opacity: 0
       background: $bgm
   box-shadow: 0 90px 100px -50px rgba(black, 0.4) , 0 50px 70px 10px rgba(black, 0.1)
   display: grid
-  grid-template-columns: 100px 1fr
-  grid-template-rows: auto
-  grid-template-areas: ' side-bar statistics '
+  grid-template-columns: auto
+  grid-template-rows: 1fr 80px
+  grid-template-areas: ' tones ' ' controle-bar ' 
+
+  .tones
+    grid-area: tones
   
   .controle-bar
-    grid-area: side-bar
-    background: rgba(#000, 0.24)
+    grid-area: controle-bar
+    background: rgba($bgl, 1)
+    
+
+  
+  
+    
+    
 
   
        
