@@ -13,3 +13,9 @@ Roadmap:
 - [ ] Coding
 - [ ] Refinement
 - [ ] Finished
+
+---
+
+![Alt text](src/Images/daily-react-030-melody-maker-app.png?raw=true "App UI")
+
+
