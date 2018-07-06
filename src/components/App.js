@@ -9,16 +9,7 @@ const Header = () => (
 
 const Items = (props) => (
   <div className=' statistics '>
-    <div className="banner-img">
-      <img src={props.bannerUrl} alt=""/>
-    </div>
-    <div className='subscribers'>
-      {props.subscribers}
-    </div>
-    <div className="avatar-img">
-      <img src={props.avatarUrl} alt=""/>
-    </div>
-
+    tones
 
   </div>
 )
@@ -33,7 +24,7 @@ const Menu = () => (
   </div>
 )
 
-class PodcastApp extends Component {
+class MelodyMakerApp extends Component {
   
   state = {
     
@@ -41,25 +32,8 @@ class PodcastApp extends Component {
 
   componentDidMount() {
      
-    // const query = 'tech'
-    // const url = 'http://gpodder.net/search.opml?q=' + query 
     
-    // console.log(url)
-    // //const url2 = "https://randomuser.me/api/";
-    // setInterval ( () => {
-      
-    //   fetch(url)
-    //     .then(res =>  res.json())
-    //     .then(data => {
-  
-    //         this.setState((prevState) => ({
-            
-    //         }))
-            
-    //       })
-    //     .catch(error => { console.log('Something went wrong!!!', error) })
-
-    // } ,1000)
+   
   }
 
  
@@ -80,7 +54,7 @@ class PodcastApp extends Component {
 const App = (props) => (
   <div className='App'>
     <Header />
-    <PodcastApp />
+    <MelodyMakerApp />
 
   </div>
 )
