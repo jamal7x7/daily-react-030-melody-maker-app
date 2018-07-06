@@ -8,19 +8,18 @@ const Header = () => (
 )
 
 const Items = (props) => (
-  <div className=' statistics '>
+  <div className='tones'>
+
     tones
 
   </div>
 )
 
-const Menu = () => (
-  <div className='side-bar'>
-    <div className='svg-input-wrap'>
+const ControleBar = () => (
+  <div className='controle-bar'>
 
-      Menu
+      Controle bar
 
-    </div>
   </div>
 )
 
@@ -32,7 +31,6 @@ class MelodyMakerApp extends Component {
 
   componentDidMount() {
      
-    
    
   }
 
@@ -41,9 +39,9 @@ class MelodyMakerApp extends Component {
   render () {
     return (
       <div 
-      className='subscribers-con'>
+      className='App-container'>
 
-        <Menu />
+        <ControleBar />
         <Items />
 
       </div>
