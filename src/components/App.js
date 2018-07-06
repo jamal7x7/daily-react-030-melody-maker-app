@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Tone from 'tone'
 import '../styles/App.css'
 
 const Header = () => (
@@ -10,7 +11,7 @@ const Header = () => (
 const Items = (props) => (
   <div className='tones'>
 
-    tones
+    <div className="c4" onClick={props.handleClick}>C4</div>
 
   </div>
 )
@@ -29,18 +30,34 @@ class MelodyMakerApp extends Component {
     
   }
 
+  handleClick = () => {
+      //create a synth and connect it to the master output (your speakers)
+      const synth = new Tone.Synth().toMaster()
+    
+      //play a middle 'C' for the duration of an 8th note
+      synth.triggerAttackRelease("C4", "8n")
+
+  }
+
   componentDidMount() {
      
-   
+    //create a synth and connect it to the master output (your speakers)
+    const synth = new Tone.Synth().toMaster()
+    
+    //play a middle 'C' for the duration of an 8th note
+    synth.triggerAttackRelease("C4", "8n")
+
   }
 
 
-  render () {
+      render () {
     return (
       <div className='App-container'>
 
         <ControleBar />
-        <Items />
+        <Items 
+          handleClick={this.handleClick}
+        />
 
       </div>
     )

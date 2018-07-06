@@ -56,6 +56,19 @@ body {
   grid-area: tones;
 }
 
+.App-container .tones .c4 {
+  background: #073175;
+  padding: 30px;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  margin: 200px auto;
+}
+
+.App-container .tones .c4:hover {
+  background: #DD8EDA;
+}
+
 .App-container .controle-bar {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
