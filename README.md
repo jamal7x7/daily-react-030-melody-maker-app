@@ -16,6 +16,6 @@ Roadmap:
 
 ---
 
-![App UI](src/images/daily-react-030-melody-maker-app.png?raw=true "App UI")
+![Alt text](src/images/daily-react-30-melody-maker-app.png?raw=true "App UI")
 
 
